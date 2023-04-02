@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 const Order = require("../models/orders");
 const Product = require("../models/products");
 
+// Clean!
 exports.get_all_orders = (req, res, next) => {
   Order.find()
     .select("product quantity _id")
